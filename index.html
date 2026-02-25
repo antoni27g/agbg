@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanzador de Apps</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="launcher">
+      <h1>Lanzador de Apps</h1>
+      <p class="subtitle">Selecciona un servicio o abre un par rápidamente.</p>
+
+      <section class="card">
+        <h2>Abrir un servicio</h2>
+        <label for="single-service">Servicio</label>
+        <select id="single-service"></select>
+        <button id="open-single" type="button">Abrir servicio</button>
+      </section>
+
+      <section class="card">
+        <h2>Abrir un par de servicios</h2>
+        <div class="pair-grid">
+          <div>
+            <label for="pair-a">Servicio A</label>
+            <select id="pair-a"></select>
+          </div>
+          <div>
+            <label for="pair-b">Servicio B</label>
+            <select id="pair-b"></select>
+          </div>
+        </div>
+        <button id="open-pair" type="button">Abrir par</button>
+      </section>
+
+      <p id="status" aria-live="polite"></p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
